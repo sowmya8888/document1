@@ -1,0 +1,37 @@
+<html
+<head>
+</head>
+<body>
+<label>Username</label>
+<input type="text" id="txtusername" name="usrname" />
+<p id="usernamepara"></p></br>
+<label>password</label>
+<input type="password" id="txtpassword" name="password"/>
+<p id="passwordpara"></p></br>
+<button onclick="myfunction()">logIn</button><p id="msg"></p>
+<script>
+function myfunction()
+{
+ var username=document.getElementById("txtusername").value;
+ var password=document.getElementById("txtpassword").value;
+ 
+if(username=='')
+{
+document.getElementById("usrnamepara").innerHTML="Enter username";
+} 
+if(password=='')
+{
+document.getElementById("passwordpara").innerHTML=" enter email";
+}
+if(username=="sowmya"&& password=="045")
+{
+window.location.href="Welcome.html";
+}
+else
+{
+document.getElementById("msg").innerHTML="Bad creditional";
+}
+}
+</script>
+</body>
+</html>
